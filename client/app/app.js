@@ -1,12 +1,12 @@
-const negociacaoController = new NegociacaoController();
+const controller = new NegociacaoController();
 
 const $ = document.querySelector.bind(document);
 
-$(".form")
-    .addEventListener("submit", negociacaoController.adiciona.bind(negociacaoController));
+$('.form')
+    .addEventListener('submit', controller.adiciona.bind(controller));
 
-$("#btn-apagar")
-    .addEventListener("click", negociacaoController.apaga.bind(negociacaoController));
+$('#botao-apaga')
+    .addEventListener('click', controller.apaga.bind(controller));
 
-$("#btn-importa")
-    .addEventListener("click", negociacaoController.importaNegociacoes.bind(negociacaoController));
+$('#botao-importa')
+    .addEventListener('click', controller.importaNegociacoes.bind(controller));

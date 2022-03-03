@@ -1,17 +1,17 @@
-class View
-{
-    constructor(seletor)
-    {
+class View {
+
+    constructor(seletor) {
+
         this._elemento = document.querySelector(seletor);
     }
 
-    update(model)
-    {
+    update(model) {
+
         this._elemento.innerHTML = this.template(model);
     }
 
-    template(model)
-    {
-        throw new Error("Método template não implementado");
+    template(model) {
+
+        throw new Error('Você precisa implementar o método template');
     }
-}
+}  
